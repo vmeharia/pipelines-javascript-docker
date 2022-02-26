@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: image1 
-          image: mycontainerregistry78.azurecr.io/image1
+          image: mycontainerregistry898.azurecr.io/pipelinesjavascriptdocker:58
           ports:
           - containerPort: 8080
