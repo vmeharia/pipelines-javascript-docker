@@ -8,8 +8,8 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: containerconn
-  imageRepository: 'pipelinesimage'
-  containerRegistry: 'mycontainerregistry898.azurecr.io'
+  imageRepository: 'aksimage'
+  containerRegistry: $(containerRegistry)
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'mycontainerregistry8987215dd6e-auth'
@@ -38,3 +38,4 @@ stages:
 
     - publish: manifests
       artifact: manifests
+
